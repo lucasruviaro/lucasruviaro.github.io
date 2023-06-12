@@ -281,27 +281,18 @@ textarea {
 
   @media only screen and (max-width: 56.25em) {
     .projects__row {
-      align-items: center;
-      justify-content: center;
+      align-items: left;
+      justify-content: left;
       margin-bottom: 4rem; } }
   .projects__row:last-child {
     margin-bottom: 50px; }
-  .projects__row-img-cont {
-    width: 200px;
-    height: 300px;
-    max-width: 100%;
-    float: left;
-    margin-top: 25px;
-    width: 50%;
-    margin-right:10px;
-    display:flex;
-  }
+ 
   @media screen and (max-width: 600px){
   .projects__row-content {
-    width: 50%;
-    float: right;
+    width: 100%;
+    float: left;
     padding: 2rem 0;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
     align-items: flex-start;
    }}
@@ -340,9 +331,14 @@ textarea {
           }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: fixed(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 37.5em) {
+    .contact{
+      margin-top: auto;
+    }
+  }
   .contact__form-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: white;
@@ -808,6 +804,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
